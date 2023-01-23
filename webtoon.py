@@ -11,17 +11,6 @@ CLASS_ = "daily_section _list_"
 
 toast = ToastNotifier()
 
-global sendit
-def sendit(toon):
-    path = os.path.join(toon.image.path, "webtoon.png")
-    toast.show_toast(
-        toon.name,
-        "Daily Action toons!",
-        path,
-        10,
-        True,
-        lambda: webb.open_new(toon.url)
-    )
 class Webtoon:
     def __init__(self, **info):
 
