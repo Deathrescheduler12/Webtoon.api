@@ -35,7 +35,7 @@ class Daily:
 
         self.url = "https://www.webtoons.com/en/dailySchedule"
     def __repr__(self) -> str:
-        repre = self.__get()
+        self.__get()
 
         return str(self.toons)
     def __getitem__(self, index):
