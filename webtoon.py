@@ -3,7 +3,6 @@ from bs4 import BeautifulSoup as bs
 from datetime import datetime
 import os
 
-from win10toast_click import ToastNotifier
 import webbrowser as webb
 import os
 
