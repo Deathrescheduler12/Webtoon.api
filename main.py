@@ -1,6 +1,8 @@
-from webtoon import Daily, sendit 
+from webtoon import Daily
+from notifw import send
+
 from time import sleep
 
 toons = Daily("drama")
 
-print(toons[0].author)
+print(send(toons[0]))
